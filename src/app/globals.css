@@ -18,11 +18,46 @@ nav {
   @apply text-gray-600 rounded-md px-3 py-2 text-sm font-normal transition-all duration-300 ease-in-out hover:border-b-2 hover:py-1 hover:text-gray-900;
 }
 /* team card */
-.team-card{
+.team-card {
   border-radius: 20px;
-  background: linear-gradient(325deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.10) 100%);
-  box-shadow: 0px 4px 24px -1px rgba(140, 140, 140, 0.20);
+  background: linear-gradient(
+    325deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  box-shadow: 0px 4px 24px -1px rgba(140, 140, 140, 0.2);
   backdrop-filter: blur(20px);
 }
 
+.service{
+  background: url('./../../public/service.svg');
+  background-repeat: no-repeat;
+}
 
+.swiper-slide-active {
+  @apply md:scale-110 !opacity-100;
+  /* scale: 1.2; */
+  background-image: url('/public/slider-bg.svg');
+}
+.swiper-slide{
+  @apply opacity-50;
+}
+
+.swiper-pagination{
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.swiper-pagination-bullet{
+  @apply p-2 md:p-5;
+  padding: 20px;
+  height: 100%;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: black!important;
+  padding: 6px;
+  border: 8px solid rgb(255, 255, 255);
+  outline: 3px solid black;
+}

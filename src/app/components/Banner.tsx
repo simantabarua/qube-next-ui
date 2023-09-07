@@ -22,27 +22,25 @@ export const Banner = () => {
           {/* First button */}
           <button
             className="
-  px-4 py-3 md:px-8 md:py-6 md:w-52
+  px-4 py-2 md:px-8 md:py-4 md:w-52
   rounded-full text-white bg-primary cursor-pointer
   font-semibold shadow-xl hover:bg-blue-700
   focus:outline-none focus:ring-2 focus:ring-primary active:bg-blue-800
 "
           >
-            Request Demo
+            Book Consultation
           </button>
 
           {/* Second button */}
           <button
             className="
-  flex items-center gap-1 px-2 py-3 md:px-8 md:py-6 md:w-52
+ px-4 py-2 md:px-8 md:py-4 md:w-52
   rounded-full text-primary border-primary shadow-xl border cursor-pointer
   font-semibold hover:bg-blue-100
   focus:outline-none focus:ring-2 focus:ring-primary active:bg-blue-200
 "
           >
-            <span className="flex items-center gap-1">
-              <PlayCircleIcon className="w-6 h-6" /> Watch Demo
-            </span>
+            Explore Profile
           </button>
         </div>
       </div>

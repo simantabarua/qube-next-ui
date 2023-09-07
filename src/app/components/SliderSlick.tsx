@@ -1,17 +1,16 @@
-"use client";
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import SectionHeader from "./Common/SectionHeader";
-import { Pagination } from "swiper/modules";
+"use client"
+import React, { Component } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import ReviewCard from "./ReiviewCard";
-import "swiper/css";
-import "swiper/css/pagination";
+
+
 interface Review {
   signature: string;
   avatar: string;
   evaluation: string;
-}
+} 
 
 const reviews: Review[] = [
   {
@@ -39,55 +38,24 @@ const reviews: Review[] = [
       "QubeNext is a dream team for any company seeking IT excellence. Their dedication, expertise, and commitment to client satisfaction are second to none. They not only transformed our systems but also transformed our business. QubeNext is not just a service provider; they are the driving force behind our success story.",
   },
 ];
-
-const Testimonial: React.FC = () => {
-  return (
-    <>
-      <div className=" container mx-auto py-20 ">
-        <SectionHeader
-          title="Testimonials"
-          subtitle="What our clients say"
-          description="Manage reconciliation across processors smoothly with all your settlement data in one report. We consolidate all your reconciliation data so your team won’t have to."
-        />
-
-        <div className="relative w-full h-[600px]">
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={10}
-            modules={[Pagination]}
-            pagination={{
-              dynamicBullets: true,
-            }}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            breakpoints={{
-              640: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
-              768: {
-                slidesPerView: 1,
-                spaceBetween: 30,
-              },
-              1024: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-            }}
-            className=""
-          >
-            {reviews.map((review, index) => (
-              <SwiperSlide className="lg:ml-8 mt-20 mb-12 md:mb-24 px-4" key={index}>
-                <ReviewCard review={review} />
-              </SwiperSlide>
+export default class SimpleSlider extends Component {
+  render() {
+    const settings = {
+      className: "center gap-10",
+      centerMode: true,
+      infinite: true,
+      slidesToShow: 2,
+      speed: 500,
+      dots: true,
+    };
+    return (
+      <div className="mx-auto container space-x-4">
+        <Slider {...settings} >
+        {reviews.map((review, index) => (
+                <ReviewCard  key={index} review={review} />
             ))}
-          </Swiper>
-        </div>
+        </Slider>
       </div>
-    </>
-  );
-};
-
-export default Testimonial;
+    );
+  }
+}

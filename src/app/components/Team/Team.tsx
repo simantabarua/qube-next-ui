@@ -16,6 +16,21 @@ const teamData: TeamCardProps[] = [
         icon: "fa fa-facebook",
         profile: "https://facebook.com",
       },
+      {
+        title: "Twitter",
+        icon: "fa fa-twitter",
+        profile: "https://twitter.com",
+      },
+      {
+        title: "Instagram",
+        icon: "fa fa-instagram",
+        profile: "https://instagram.com",
+      },
+      {
+        title: "GitHub",
+        icon: "fa fa-github",
+        profile: "https://github.com",
+      },
     ],
   },
   {
@@ -30,6 +45,21 @@ const teamData: TeamCardProps[] = [
         title: "Facebook",
         icon: "fa fa-facebook",
         profile: "https://facebook.com",
+      },
+      {
+        title: "Twitter",
+        icon: "fa fa-twitter",
+        profile: "https://twitter.com",
+      },
+      {
+        title: "Instagram",
+        icon: "fa fa-instagram",
+        profile: "https://instagram.com",
+      },
+      {
+        title: "GitHub",
+        icon: "fa fa-github",
+        profile: "https://github.com",
       },
     ],
   },
@@ -46,6 +76,21 @@ const teamData: TeamCardProps[] = [
         icon: "fa fa-facebook",
         profile: "https://facebook.com",
       },
+      {
+        title: "Twitter",
+        icon: "fa fa-twitter",
+        profile: "https://twitter.com",
+      },
+      {
+        title: "Instagram",
+        icon: "fa fa-instagram",
+        profile: "https://instagram.com",
+      },
+      {
+        title: "GitHub",
+        icon: "fa fa-github",
+        profile: "https://github.com",
+      },
     ],
   },
   {
@@ -60,6 +105,21 @@ const teamData: TeamCardProps[] = [
         title: "Facebook",
         icon: "fa fa-facebook",
         profile: "https://facebook.com",
+      },
+      {
+        title: "Twitter",
+        icon: "fa fa-twitter",
+        profile: "https://twitter.com",
+      },
+      {
+        title: "Instagram",
+        icon: "fa fa-instagram",
+        profile: "https://instagram.com",
+      },
+      {
+        title: "GitHub",
+        icon: "fa fa-github",
+        profile: "https://github.com",
       },
     ],
   },
@@ -76,6 +136,21 @@ const teamData: TeamCardProps[] = [
         icon: "fa fa-facebook",
         profile: "https://facebook.com",
       },
+      {
+        title: "Twitter",
+        icon: "fa fa-twitter",
+        profile: "https://twitter.com",
+      },
+      {
+        title: "Instagram",
+        icon: "fa fa-instagram",
+        profile: "https://instagram.com",
+      },
+      {
+        title: "GitHub",
+        icon: "fa fa-github",
+        profile: "https://github.com",
+      },
     ],
   },
   {
@@ -90,6 +165,21 @@ const teamData: TeamCardProps[] = [
         title: "Facebook",
         icon: "fa fa-facebook",
         profile: "https://facebook.com",
+      },
+      {
+        title: "Twitter",
+        icon: "fa fa-twitter",
+        profile: "https://twitter.com",
+      },
+      {
+        title: "Instagram",
+        icon: "fa fa-instagram",
+        profile: "https://instagram.com",
+      },
+      {
+        title: "GitHub",
+        icon: "fa fa-github",
+        profile: "https://github.com",
       },
     ],
   },
@@ -106,10 +196,24 @@ const teamData: TeamCardProps[] = [
         icon: "fa fa-facebook",
         profile: "https://facebook.com",
       },
+      {
+        title: "Twitter",
+        icon: "fa fa-twitter",
+        profile: "https://twitter.com",
+      },
+      {
+        title: "Instagram",
+        icon: "fa fa-instagram",
+        profile: "https://instagram.com",
+      },
+      {
+        title: "GitHub",
+        icon: "fa fa-github",
+        profile: "https://github.com",
+      },
     ],
   },
 ];
-console.log(teamData);
 
 const Team: React.FC = () => {
   return (
@@ -120,7 +224,7 @@ const Team: React.FC = () => {
           subtitle="Meet Our Team"
           description="Hundreds of the most modern payment services available, connect them according to your needs - The API and data infrastructure we provide will easily help you."
         />
-        <div className="max-w-7xl flex flex-wrap items-center justify-center mx-auto py-10 gap-6">
+        <div className="max-w-7xl flex flex-wrap items-center justify-center px-4 mx-auto py-10 gap-6">
           {teamData.map((data, index) => (
             <TeamCard key={index} {...data} />
           ))}

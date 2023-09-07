@@ -26,7 +26,8 @@ const TeamCard: React.FC<TeamCardProps> = ({
   social,
 }) => {
   return (
-    <div className="team-card w-96  h-[465px] p-6 hover:scale-100 transition duration-300 transform hover:shadow-2xl cursor-pointer">
+    <div className="team-card w-96 h-[465px] p-6 hover:scale-100 transition duration-300 transform hover:shadow-2xl cursor-pointer flex flex-col justify-between">
+    <div>
       <div className="flex justify-between">
         <Image
           src={avatar}
@@ -50,21 +51,24 @@ const TeamCard: React.FC<TeamCardProps> = ({
         </div>
         <p className="my-4">{excerpt}</p>
       </div>
-
-      <div className="team-card-footer">
-        <div className="flex items-center justify-center text-4xl md:gap-8">
-          {social.map((value, index) => (
-            <a
-              key={index}
-              className="text-gray-600 hover:-translate-y-2 transition duration-300 transform"
-              href={value.profile}
-            >
-              <i className={`${value.icon} block w-4 h-4`} ></i>
-            </a>
-          ))}
-        </div>
+    </div>
+  
+    <div className="team-card-footer">
+      <div className="flex items-center justify-center text-4xl md:gap-8">
+        {social.map((value, index) => (
+          <a
+            key={index}
+            className="text-gray-600 hover:-translate-y-2 transition duration-300 transform"
+            href={value.profile}
+          >
+            <i className={`${value.icon} block w-4 h-4`} ></i>
+          </a>
+        ))}
       </div>
     </div>
+  </div>
+  
+  
   );
 };
 
