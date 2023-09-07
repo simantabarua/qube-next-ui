@@ -4,7 +4,6 @@ import Footer from "./components/Common/Footer";
 import Navbar from "./components/Common/Navbar";
 import NewsLatter from "./components/NewsLatter";
 import Services from "./components/Services";
-import SimpleSlider from "./components/SliderSlick";
 import Team from "./components/Team/Team";
 import Testimonial from "./components/Testimonial";
 
@@ -19,7 +18,6 @@ export default function Home() {
         <Team />
         <Testimonial />
         <NewsLatter />
-        {/* <SimpleSlider/> */}
         <Footer />
       </div>
     </main>

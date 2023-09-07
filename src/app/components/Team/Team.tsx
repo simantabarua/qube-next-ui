@@ -9,7 +9,7 @@ const teamData: TeamCardProps[] = [
     designation: "Co-Founder | Business Developer",
     excerpt:
       "Our startup's culture fosters creativity and collaboration, making it a truly empowering and supportive environment to work in. It's a place where ideas flourish and dreams become reality.",
-    qrCode: " ",
+    qrCode: "https://i.ibb.co/tQcpMBx/image-188-2.png",
     social: [
       {
         title: "Facebook",
@@ -39,7 +39,7 @@ const teamData: TeamCardProps[] = [
     designation: "Sr. UI/UX Designer & Executive Officer",
     excerpt:
       "I'm continuously inspired by the level of passion and dedication that our team brings to the table every day. Working with such talented individuals is a privilege.",
-    qrCode: " ",
+    qrCode: "https://i.ibb.co/tQcpMBx/image-188-2.png",
     social: [
       {
         title: "Facebook",
@@ -69,7 +69,7 @@ const teamData: TeamCardProps[] = [
     designation: "UI/UX Designer",
     excerpt:
       "I appreciate the emphasis our startup places on employee development and well-being. The support and resources provided for personal and professional growth truly make this a special place to work.",
-    qrCode: " ",
+    qrCode: "https://i.ibb.co/tQcpMBx/image-188-2.png",
     social: [
       {
         title: "Facebook",
@@ -99,7 +99,7 @@ const teamData: TeamCardProps[] = [
     designation: "Native Android Developer",
     excerpt:
       "Innovation knows no boundaries. The journey of a startup is the canvas of your dreams.Don't be afraid to take the leap. The greatest empires were once just a startup idea.",
-    qrCode: " ",
+    qrCode: "https://i.ibb.co/tQcpMBx/image-188-2.png",
     social: [
       {
         title: "Facebook",
@@ -129,7 +129,7 @@ const teamData: TeamCardProps[] = [
     designation: "Laravel Developer",
     excerpt:
       "It's amazing to witness the growth and progress our startup has made in such a short time. Each day, we're making a meaningful impact in the industry, and I'm thrilled to be a part of this journey.",
-    qrCode: " ",
+    qrCode: "https://i.ibb.co/tQcpMBx/image-188-2.png",
     social: [
       {
         title: "Facebook",
@@ -159,7 +159,7 @@ const teamData: TeamCardProps[] = [
     designation: "FrontEnd Developer",
     excerpt:
       "Our startup's commitment to staying ahead of the curve in terms of technology and market trends show our determination to lead the industry into the future",
-    qrCode: " ",
+    qrCode: "https://i.ibb.co/tQcpMBx/image-188-2.png",
     social: [
       {
         title: "Facebook",
@@ -189,7 +189,7 @@ const teamData: TeamCardProps[] = [
     designation: "Co-Founder | Entrepreneur | Developer",
     excerpt:
       "I'm proud to represent a startup that not only prioritizes innovation and efficiency but also actively seeks to make a positive difference in the world. Our company's dedication to sustainability and social responsibility is truly commendable.",
-    qrCode: " ",
+    qrCode: "https://i.ibb.co/tQcpMBx/image-188-2.png",
     social: [
       {
         title: "Facebook",
