@@ -3,7 +3,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import SectionHeader from "./Common/SectionHeader";
-import { Pagination } from "swiper/modules";
+import { Autoplay, EffectFade, Pagination } from "swiper/modules";
+
 import ReviewCard from "./ReiviewCard";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -54,7 +55,7 @@ const Testimonial: React.FC = () => {
           <Swiper
             slidesPerView={1}
             spaceBetween={10}
-            modules={[Pagination]}
+            modules={[Autoplay, EffectFade, Pagination]}
             pagination={{
               dynamicBullets: true,
             }}
@@ -62,6 +63,7 @@ const Testimonial: React.FC = () => {
               delay: 2500,
               disableOnInteraction: false,
             }}
+            speed={300}
             breakpoints={{
               640: {
                 slidesPerView: 1,
@@ -69,17 +71,19 @@ const Testimonial: React.FC = () => {
               },
               768: {
                 slidesPerView: 1,
-                spaceBetween: 30,
+                spaceBetween: 20,
               },
               1024: {
                 slidesPerView: 2,
                 spaceBetween: 20,
               },
             }}
-            className=""
           >
             {reviews.map((review, index) => (
-              <SwiperSlide className="lg:ml-8 mt-20 mb-12 md:mb-24 px-4" key={index}>
+              <SwiperSlide
+                className="lg:ml-8 mt-20 mb-12 md:mb-24 px-4"
+                key={index}
+              >
                 <ReviewCard review={review} />
               </SwiperSlide>
             ))}

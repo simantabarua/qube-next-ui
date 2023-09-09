@@ -12,7 +12,7 @@ const FutureSectionTitle: React.FC<FeatureSectionProps> = ({ title, subtitle, de
       <p className="text-sm font-semibold uppercase tracking-widest text-primary">
         {title}
       </p>
-      <h3 className=" text-4xl md:text-5xl font-semibold max-w-2xl">{subtitle}</h3>
+      <h3 className=" text-4xl md:text-5xl font-semibold w-full md:max-w-2xl">{subtitle}</h3>
       <p className="text-secondary max-w-2xl">{description}</p>
     </div>
   );

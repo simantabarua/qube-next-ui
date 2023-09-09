@@ -18,7 +18,7 @@ export const AnimatedSVG = () => {
       path.style.strokeDashoffset = String(length);
       path.getBoundingClientRect();
       path.style.transition = path.style.webkitTransition =
-        "stroke-dashoffset 5s ease-in-out";
+        "stroke-dashoffset 3s ease-in-out";
       path.style.strokeDashoffset = "0";
     }
 
@@ -30,12 +30,12 @@ export const AnimatedSVG = () => {
     animatePath("path6");
   }, []);
   return (
-    <div className="max-h-screen w-full absolute  bottom-0 md:inset-0  -mt-5  ">
+    <div className="min-h-screen w-full absolute hidden  lg:block  bottom-0 md:inset-0  -mt-5  ">
       <div className="relative h-fit w-full ">
         <svg
-          className="-z-10 mx-auto"
+          className="-z-10 mx-auto min-h-screen"
           width="100%"
-          height="90%"
+          height="100%"
           viewBox="0 0 1920 996"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

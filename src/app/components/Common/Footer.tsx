@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <footer className="bg-white pt-8">
         <div className="container mx-auto px-4  sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-6 gap-8">
+          <div className="grid grid-cols-1 md:col-span-3 lg:grid-cols-6 gap-8">
             <div className="col-span-1 md:col-span-2 text-center md:text-left ">
               <Image
                 src={Logo}

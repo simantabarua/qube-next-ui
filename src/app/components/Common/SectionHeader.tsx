@@ -8,7 +8,7 @@ interface SectionHeaderProps {
 
 const SectionHeader: FC<SectionHeaderProps> = ({ title, subtitle, description }) => {
   return (
-    <div className="max-w-2xl mx-auto text-center">
+    <div className="max-w-2xl mx-auto text-center px-4">
       <p className="text-sm font-semibold tracking-widest uppercase text-primary">{title}</p>
       <h2 className="text-4xl md:text-6xl font-bold">{subtitle}</h2>
       <p className="text-secondary">{description}</p>
